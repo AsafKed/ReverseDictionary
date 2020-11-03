@@ -21,19 +21,23 @@ let input_type
 export default {
   name: "InputSelector",
   methods: {
+    // Let button declare which input type should be entered
     setInput(input) {
-      console.log("Input type: " + input)
-      input_type = input
-      this.$emit('clicked', input_type)
+      this.input_type = input
     }
   },
   data() {
     return {
       input_type
     }
+  },
+  watch: {
+    input_type: function() {
+      // Update the parent everytime that something is selected
+      this.$emit('requested_input_type', this.input_type)
+    }
   }
 }
-console.log("Input type: " + input_type)
 </script>
 
 <style scoped>
