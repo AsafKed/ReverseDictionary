@@ -23,19 +23,13 @@ export default {
   methods: {
     // Let button declare which input type should be entered
     setInput(input) {
-      this.input_type = input
+      // this.input_type = input
+      input_type = input
+      this.$emit('request_input_type', input_type)
     }
   },
   data() {
-    return {
-      input_type
-    }
-  },
-  watch: {
-    input_type: function() {
-      // Update the parent everytime that something is selected
-      this.$emit('requested_input_type', this.input_type)
-    }
+    return input_type
   }
 }
 </script>
@@ -45,8 +39,8 @@ export default {
   display: flex;
 }
 
-.input_option {
-  margin: 5px;
-  padding: 5px;
-}
+/*.input_option {*/
+/*  margin: 5px;*/
+/*  padding: 5px;*/
+/*}*/
 </style>
