@@ -1,24 +1,11 @@
-# firstvueapp
+# ReverseDictionary
 
-## Project setup
+## Todo
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Fill in
 ```
 
-### Compiles and minifies for production
+### Fill in
 ```
-npm run build
+Etc.
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
