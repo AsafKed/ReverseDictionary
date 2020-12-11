@@ -1,11 +1,5 @@
 # ReverseDictionary
 
-## Todo
+## Work in progress to learn Vue
 ```
-Fill in
-```
-
-### Fill in
-```
-Etc.
-```
+Not even close to completion
